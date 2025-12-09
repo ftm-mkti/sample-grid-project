@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root{
+    --color_fff:#fff;
+    --color_C90000:#C90000;
+    --color_7D7C7C:#7D7C7C;
+    --color_504F4F:#504F4F;
+    --color_323232:#323232;
+    --color_FFC300:#FFC300;
+    --color_FFF6A3:#FFF6A3;
+    --color_E3E3E3:#E3E3E3;
+    --color_F1F1F1:#F1F1F1;
+}
+
+body {
+    font-family: poppins,sans-serif;
+}
+
+/*===================================| reset style*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*==============================| components */
+
+.container {
+    max-width: 1170px;
+    margin:0 auto;
+    padding:0 1rem;
+}
+
+.text_danger{
+    color: var(--color_C90000);
+}
