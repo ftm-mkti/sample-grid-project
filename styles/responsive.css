@@ -1,0 +1,49 @@
+@media (max-width: 835px) {
+
+    .header_wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header_login {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform-origin: center;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 12px;
+        z-index: 10;
+    }
+
+    .header_login .header_link {
+        display: inline-block;
+        padding: 6px 8px;
+    }
+
+    .toggle_burger_menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #toggle_menu:checked + label .toggle_burger_menu {
+        display: none;
+    }
+
+    #toggle_menu:checked + label .toggle_close_menu {
+        display: block;
+    }
+
+    #toggle_menu:checked ~ .nav_menu_sidebar {
+        left: 0;
+    }
+
+}

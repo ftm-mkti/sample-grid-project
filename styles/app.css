@@ -3,10 +3,6 @@
 
 /*=================================| start topbar */
 
-.header {
-
-}
-
 .topbar {
     margin: 1rem 0;
 }
@@ -26,9 +22,6 @@
     width: 100%;
 }
 
-.header_menu {
-
-}
 
 .menu {
     display: flex;
@@ -64,6 +57,35 @@
     font-weight: 500;
 }
 
+.toggle_burger_menu {
+    display: none;
+}
 
+.toggle_close_menu {
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: var(--color_7D7C7C);
+}
 
+.nav_menu_sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: var(--color_C90000);
+    left: -256px;
+    width: 256px;
+    height: 100vh;
+    transition:all 0.2s ease-in-out;
+    z-index: 15;
+}
+
+.nav_item_sidebar {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.nav_link_sidebar {
+    color: var(--color_fff);
+    padding: 2rem;
+}
 
