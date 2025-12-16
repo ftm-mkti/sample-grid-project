@@ -1,4 +1,4 @@
-@media (max-width: 835px) {
+@media (max-width: 836px) {
 
     .header_wrapper {
         display: grid;
@@ -46,6 +46,211 @@
         left: 0;
     }
 
+    /*======================|end topbar*/
+    .header_content_left {
+        margin-top: 7rem;
+    }
+
+    .header_title {
+        margin-top: 3rem;
+    }
+
+    .header_text {
+        font-size: 40px;
+    }
+
+    .header_caption {
+        font-size: 20px;
+    }
+
+    .header_total_price {
+        margin-top: 3rem;
+    }
+
+    .time_img {
+        top: -97px;
+        left: -125px;
+    }
+
+    .order_btn {
+        gap: 5px;
+        font-size: 16px;
+        width: 153px;
+        height: 54px;
+        padding: 0 17px;
+    }
+
 }
 
-/*======================|end topbar*/
+@media (max-width: 738px) {
+
+    .header_text {
+        font-size: 33px;
+    }
+
+    .header_caption {
+        font-size: 15px;
+    }
+
+    .time_img {
+        top: -59px;
+        left: -70px;
+        max-width: 110px;
+    }
+
+    .number::after, .number::before {
+        margin: 0 2px;
+    }
+}
+
+@media (max-width: 672px) {
+    .order_btn {
+        gap: 5px;
+        font-size: 14px;
+        width: 139px;
+        height: 50px;
+        padding: 0 14px;
+    }
+
+    .count {
+        max-width: 115px;
+        max-height: 46px;
+        padding: 5px 10px;
+    }
+
+    .increase {
+        font-size: 25px;
+    }
+
+    .decrease {
+        font-size: 35px;
+    }
+
+    .number {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 589px) {
+    .header_title {
+        margin-top: 6rem;
+    }
+
+    .header_text {
+        font-size: 27px;
+    }
+
+    .header_caption {
+        font-size: 14px;
+    }
+
+    .order_btn {
+        width: 134px;
+        height: 51px;
+        padding: 0 12px;
+    }
+
+    .time_img {
+        top: -73px;
+        width: 100px;
+    }
+
+    .header_content_left {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 592px) {
+    .number {
+        font-size: 14px;
+    }
+
+    .order_btn {
+        gap: 5px;
+        font-size: 14px;
+        width: 126px;
+        height: 50px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 493px) {
+    .header_content_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_content_left {
+        margin-top: -1rem;
+        max-width: unset;
+
+    }
+
+    .header_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: unset;
+    }
+
+    .header_caption {
+        font-size: 15px;
+    }
+
+    .header_total {
+        display: none;
+    }
+
+
+    .header_total_mobile {
+        display: block;
+        margin-top: 7rem;
+        max-width: 296px;
+    }
+
+    .order_mobile {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .count {
+        margin-right: 35px;
+        width: 119px;
+        height: 119px;
+    }
+
+    .increase {
+        font-size: 30px;
+    }
+
+    .number {
+        font-size: 18px;
+    }
+
+    .decrease {
+        font-size: 35px;
+    }
+
+    .order_btn {
+        gap: 8px;
+        font-size: 16px;
+        width: 161px;
+        padding: 0 0 0 15px;
+    }
+
+
+    .header_time {
+        display: none;
+    }
+
+    .t-img {
+        display: block;
+        transform: translate(-5rem, 3rem);
+        width: 138px;
+    }
+}
