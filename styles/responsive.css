@@ -101,6 +101,15 @@
     .number::after, .number::before {
         margin: 0 2px;
     }
+
+    .row_grid_food_products {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+    .img_item_food_grid > div {
+        margin-top: -105px;
+        margin-left: 32px;
+        max-width: 270px;
+    }
 }
 
 @media (max-width: 672px) {
@@ -253,4 +262,8 @@
         transform: translate(-5rem, 3rem);
         width: 138px;
     }
+    .img_item_food_grid > div {
+        max-width: 229px;
+    }
+
 }
