@@ -235,25 +235,31 @@
     display: none;
 }
 
-/*=================================|*/
+/*=================================|menu_list_items*/
 .menu_list_items {
     margin-top: 3rem;
 }
 
-.menu_list_title {
+.menu_list_items_wrapper, .sale-off_header {
+    display: inline-block;
     position: relative;
+}
+
+.menu_list_title, .sale-off_title {
     font-family: "poppins-semibold", serif;
     font-weight: 600;
     font-size: 48px;
     color: var(--color_C90000);
 }
 
-.menu_list_line {
-    width: 137px;
+.menu_list_line, .sale-off_line {
+    width: 100%;
     height: 9px;
     background-color: var(--color_FFF6A3);
-    margin-top: -18px;
-    margin-left: -1px;
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    z-index: -1;
 }
 
 .button_category {
@@ -292,7 +298,6 @@
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     justify-content: center;
     gap: 8px;
-    height: 363px;
 }
 
 .item_food_grid {
@@ -301,9 +306,11 @@
     padding: 16px;
     position: relative;
 }
+
 .badge_discount {
     position: absolute;
 }
+
 .img_item_food_grid {
     width: 338px;
     text-align: center;
@@ -377,9 +384,192 @@
     padding: 5px;
     background-color: var(--color_C90000);
     border-color: transparent;
+    cursor: pointer;
 }
 
 .bottom_item_food_grid svg {
     width: 24px;
     color: var(--color_F1F1F1);
+}
+
+.see-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.see {
+    font-family: "poppins-medium-500", serif;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: var(--color_504F4F);
+    text-align: center;
+}
+
+.sale-off_header {
+    display: flex;
+    margin: 3rem auto;
+    width: max-content;
+}
+
+/*=========================|sale-off*/
+
+.sale-off_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+}
+
+.sale-off_items {
+    display: flex;
+    height: 335px;
+    border: 1px solid var(--color_E3E3E3);
+    border-radius: 20px;
+    background-color: var(--color_E3E3E3);
+    padding: 40px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sale-off_items:hover {
+    transition:all 0.2s ease;
+    background-color: #D62822;
+    scale: 1.1;
+}
+
+.sale-off_item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.sale-off_titles span {
+    font-family: "poppins-regular", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color_323232);
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.sale-off_items:hover .sale-off_titles span {
+    color: #FFEAE6;
+}
+
+.sale-off_titles span:after {
+    content: "";
+    display: inline-block;
+    width: 140%;
+    height: 1px;
+    background-color: var(--color_7D7C7C);
+    position: absolute;
+    left: 78px;
+    top: 10px;
+}
+
+.sale-off_items:hover .sale-off_titles span:after {
+    background-color: #F1F1F1;
+}
+
+.sale-off_titles h3 {
+    font-family: "poppins-semibold", serif;
+    font-weight: 600;
+    font-size: 26px;
+    color: var(--color_C90000);
+    white-space: nowrap;
+}
+
+.sale-off_items:hover .sale-off_titles h3 {
+    color: var(--color_FFC300);
+}
+
+.sale-off_titles p {
+    max-width: 156px;
+    font-family: "poppins-regular", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color_504F4F);
+    min-height: 48px;
+}
+
+.sale-off_items:hover .sale-off_titles p {
+    color: var(--color_F1F1F1);
+}
+
+.sale-off_price {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.sale-off_price del {
+    color: var(--color_504F4F);
+    font-family: poppins-semibold, serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 1rem;
+}
+
+.sale-off_items:hover .sale-off_price del {
+    color: var(--color_F1F1F1);
+}
+
+.sale-off_price p {
+    font-family: poppins-semibold, serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color_C90000);
+    margin: 0;
+}
+
+.sale-off_items:hover .sale-off_price p {
+    color: var(--color_FFC300);
+}
+
+.sale-off_order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    gap: 8px;
+    opacity: 1;
+    padding: 8px 12px 8px 12px;
+    border-radius: 20px;
+    background-color: var(--color_504F4F);
+    border: none;
+    margin-top: 0;
+}
+
+.sale-off_items:hover .sale-off_order {
+    background-color: #FFFDE6;
+}
+
+.sale-off_items:hover .sale-off_order path {
+    fill: var(--color_323232);
+}
+
+.sale-off_order span {
+    margin: 0;
+    font-family: "poppins-medium-500", serif;
+    font-size: 15px;
+}
+
+.sale-off_items:hover .sale-off_order span {
+    color: var(--color_323232);
+}
+
+.sale-off_image {
+    position: relative;
+    right: 64px;
+    bottom: -62px;
+}
+
+.sale-off_image img {
+    width: 260px;
 }
