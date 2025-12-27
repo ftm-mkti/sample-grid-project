@@ -1,3 +1,82 @@
+@media (max-width: 1228px) {
+    .section_mobile_app {
+        max-width: 98%;
+    }
+
+    .img_section_mobile_app img {
+        transform: scale(1.1);
+        top: -5px;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 1115px) {
+    .img_section_mobile_app img {
+        transform: scale(1);
+        top: 15px;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 1068px) {
+
+    .img_section_mobile_app img {
+        transform: scale(0.9);
+        top: 32px;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1016px) {
+    .content_section_mobile_app {
+        padding: 4rem 2rem 1rem;
+    }
+
+    .content_section_mobile_app h6 {
+        margin: 1rem;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 30px;
+    }
+
+    .img_section_mobile_app img {
+        transform: scale(0.9);
+    }
+
+    .download_btn_app a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1016px) {
+
+    .content_section_mobile_app {
+        padding: 2rem 5rem 1rem;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 25px;
+    }
+
+    .content_section_mobile_app p {
+        font-size: 14px;
+    }
+
+    .download_btn_app img {
+        width: 135px;
+    }
+}
+
 @media (max-width: 836px) {
 
     .header_wrapper {
@@ -80,6 +159,38 @@
         padding: 0 17px;
     }
 
+    /*==========================| section_mobile_app*/
+    .section_mobile_app {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .img_section_mobile_app img {
+        padding-left: 5rem;
+        transform: scale(1.1);
+        position: relative;
+        top: 1px;
+        margin-top: 3rem;
+    }
+
+    .download_btn_app a img {
+        width: 156px;
+        margin-top: 30px;
+    }
+
+    .content_section_mobile_app h6 {
+        margin: 1rem 0;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 30px;
+    }
+
+    .content_section_mobile_app p {
+        font-size: 16px;
+    }
+
 }
 
 @media (max-width: 738px) {
@@ -105,6 +216,7 @@
     .row_grid_food_products {
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     }
+
     .img_item_food_grid > div {
         margin-top: -105px;
         margin-left: 32px;
@@ -141,6 +253,44 @@
 
 }
 
+@media (max-width: 624px) {
+
+    .section_mobile_app {
+        overflow: hidden;
+    }
+
+    .content_section_mobile_app {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .content_section_mobile_app h4 {
+        font-size: 24px;
+    }
+
+    .img_section_mobile_app img {
+        transform: scale(1);
+        top: 15px;
+        margin-top: 3rem;
+        left: -48px;
+    }
+
+}
+
+@media (max-width: 592px) {
+
+    .number {
+        font-size: 14px;
+    }
+
+    .order_btn {
+        gap: 5px;
+        font-size: 14px;
+        width: 126px;
+        height: 50px;
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 589px) {
     .header_title {
         margin-top: 6rem;
@@ -171,19 +321,6 @@
 
 }
 
-@media (max-width: 592px) {
-    .number {
-        font-size: 14px;
-    }
-
-    .order_btn {
-        gap: 5px;
-        font-size: 14px;
-        width: 126px;
-        height: 50px;
-        padding: 0 10px;
-    }
-}
 
 @media (max-width: 493px) {
     .header_content_wrapper {
@@ -262,8 +399,49 @@
         transform: translate(-5rem, 3rem);
         width: 138px;
     }
+
     .img_item_food_grid > div {
         max-width: 229px;
     }
 
+    /*=============================| section_mobile_app*/
+    .section_mobile_app {
+        border-radius: unset;
+        border-top-right-radius: 500px;
+        border-top-left-radius: 500px;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .content_section_mobile_app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 2rem 1rem;
+    }
+    .content_section_mobile_app h6 {
+        font-size: 16px;
+    }
+    .content_section_mobile_app h4 {
+        font-size: 20px;
+    }
+    .content_section_mobile_app p {
+        font-size: 14px;
+    }
+    .download_btn_app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download_btn_app a {
+        width: auto;
+    }
+    .download_btn_app a:last-child {
+        margin-left: 2rem;
+    }
+    .download_btn_app a img {
+        width: 135px;
+    }
 }
