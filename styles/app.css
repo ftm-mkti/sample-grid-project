@@ -298,6 +298,7 @@
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     justify-content: center;
     gap: 8px;
+    overflow: hidden;
 }
 
 .item_food_grid {
@@ -676,12 +677,17 @@
     border: 0;
     font-size: 16px;
     font-weight: 400;
+    padding-left: 20px ;
 }
 .content_search_location form input::placeholder{
     color: var(--color_504F4F);
     font-family: "poppins-regular", serif;
     font-weight: 400;
     font-size: 16px;
+}
+
+.content_search_location form input:focus{
+   outline: none;
 }
 .content_search_location form button{
     background-color: var(--color_fff);

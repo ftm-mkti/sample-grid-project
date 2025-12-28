@@ -1,3 +1,10 @@
+@media (max-width: 1034px) {
+
+    .content_search_location h6 {
+        font-size: 35px;
+    }
+}
+
 @media (max-width: 1228px) {
     .section_mobile_app {
         max-width: 98%;
@@ -193,6 +200,15 @@
 
 }
 
+@media (max-width: 808px) {
+    .content_search_location h6 {
+        font-size: 28px;
+    }
+    .content_search_location form {
+        width: 62%;
+    }
+}
+
 @media (max-width: 738px) {
 
     .header_text {
@@ -221,6 +237,17 @@
         margin-top: -105px;
         margin-left: 32px;
         max-width: 270px;
+    }
+}
+
+@media (max-width: 694px) {
+
+    .content_search_location h6 {
+        font-size: 20px;
+    }
+
+    .content_search_location p {
+        font-size: 12px;
     }
 }
 
@@ -321,6 +348,30 @@
 
 }
 
+@media (max-width: 562px) {
+    .content_search_location h6 {
+        font-size: 20px;
+    }
+    .content_search_location p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 551px) {
+    .section_search_location img:nth-child(4) {
+        top: 5%;
+        left: 0;
+    }
+    .content_search_location h6 {
+        font-size: 25px;
+    }
+    .content_search_location p {
+        font-size: 16px;
+    }
+    .content_search_location form {
+        width: 70%;
+    }
+}
 
 @media (max-width: 493px) {
     .header_content_wrapper {
@@ -420,15 +471,19 @@
         flex-direction: column;
         padding: 2rem 2rem 1rem;
     }
+
     .content_section_mobile_app h6 {
         font-size: 16px;
     }
+
     .content_section_mobile_app h4 {
         font-size: 20px;
     }
+
     .content_section_mobile_app p {
         font-size: 14px;
     }
+
     .download_btn_app {
         display: flex;
         justify-content: center;
@@ -438,10 +493,27 @@
     .download_btn_app a {
         width: auto;
     }
+
     .download_btn_app a:last-child {
         margin-left: 2rem;
     }
+
     .download_btn_app a img {
         width: 135px;
+    }
+}
+
+@media (max-width: 493px){
+    .content_search_location h6 {
+        font-size: 18px;
+    }
+    .content_search_location p {
+        font-size: 13px;
+    }
+    .content_search_location form {
+        width: 86%;
+    }
+    .content_search_location form input::placeholder {
+        font-size: 14px;
     }
 }
