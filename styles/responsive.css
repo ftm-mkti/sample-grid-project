@@ -83,7 +83,23 @@
         width: 135px;
     }
 }
+@media (max-width: 897px) {
 
+    .grid_section_footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .info_site_footer{
+        grid-row: 2;
+        grid-column: 2 span;
+        justify-self: center;
+        margin-top: 2rem;
+    }
+
+    .grid_section_footer .link_footer:nth-child(2){
+        justify-self: center;
+    }
+}
 @media (max-width: 836px) {
 
     .header_wrapper {

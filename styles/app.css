@@ -295,7 +295,7 @@
 
 .row_grid_food_products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
     justify-content: center;
     gap: 8px;
     overflow: hidden;
@@ -315,6 +315,7 @@
 .img_item_food_grid {
     width: 338px;
     text-align: center;
+    position: relative;
 }
 
 .item_food_grid > img {
@@ -421,6 +422,7 @@
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
 }
+
 
 .sale-off_items {
     display: flex;
@@ -710,4 +712,58 @@
 .section_search_location img:nth-child(4){
     top: 18%;
     left: 0;
+}
+
+/*====================================|footer */
+
+footer{
+    background-color: var(--color_FFFDE6);
+    padding: 32px 0;
+    margin-top: 5rem;
+}
+.grid_section_footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 100px;
+}
+.logo_footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.logo_footer img{
+    max-width: 70px;
+}
+.logo_footer h6{
+    color: var(--color_323232);
+    font-size: 32px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.info_site_footer{
+    align-self: center;
+}
+.info_site_footer ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 4rem;
+    margin-top: -20px;
+}
+.link_footer h5{
+    color: var(--color_323232);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+.link_footer ul li {
+    color: var(--color_323232);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 36px;
+}
+.link_footer ul li a{
+    color: inherit;
 }
